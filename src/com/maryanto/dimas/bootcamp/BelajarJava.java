@@ -4,29 +4,37 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+/**
+ * lasdjfkldfjlsdjf
+ */
 public class BelajarJava {
 
-    public static void main(String[] args) {
-//        bilangan integer
-        int i = 5;
-        Integer index = 5;
-/*
-ini adalah tipe data long
-alskdfjdskljsfdf
- */
-        Long latitute = 100_000_000l;
+    public static String functionLain() {
+        String namaLengkap = "Dimas Maryanto";
+        return namaLengkap;
+    }
 
-        BigDecimal saldo = new BigDecimal(5000);
+    public static BigDecimal hitungLagi(BigDecimal saldo, Float pajak) {
+        String namaLengkap = "Dimas Maryanto";
+        BigDecimal bunga = saldo.multiply(BigDecimal.valueOf(pajak));
+        return bunga;
+//        return namaLengkap;
+    }
 
-        char huruf = 'A';
-        String kalimat = "Halo saya dengan belajar java!";
-
+    public static void procedureLain() {
         LocalDate sekarang = LocalDate.now();
         LocalDateTime custome = LocalDateTime.of(2022, 03, 24, 9, 30);
+        LocalDate tanggalLahir = LocalDate.of(1999, 01, 1);
 
-        System.out.println(kalimat);
         System.out.println("sekarang tanggal: " + sekarang.toString());
-
         System.out.println("sekarang jam: " + custome.toString());
+    }
+
+    public static void main(String[] args) {
+        procedureLain();
+
+        BigDecimal saldo = hitungLagi(BigDecimal.valueOf(1000), 3f);
+        hitungLagi(saldo, 3f);
+        System.out.println("nama lengkap " + saldo);
     }
 }
