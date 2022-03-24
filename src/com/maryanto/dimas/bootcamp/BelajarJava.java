@@ -1,5 +1,7 @@
 package com.maryanto.dimas.bootcamp;
 
+import com.maryanto.dimas.bootcamp.controller.BukuController;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -31,10 +33,7 @@ public class BelajarJava {
     }
 
     public static void main(String[] args) {
-        procedureLain();
-
-        BigDecimal saldo = hitungLagi(BigDecimal.valueOf(1000), 3f);
-        hitungLagi(saldo, 3f);
-        System.out.println("nama lengkap " + saldo);
+        BukuController call = new BukuController();
+        call.insert();
     }
 }
