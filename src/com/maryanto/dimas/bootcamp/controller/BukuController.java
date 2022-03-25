@@ -9,7 +9,7 @@ public class BukuController {
 
     private BukuService service;
 
-    public void insert(){
+    public void insert() {
         Buku pemograman = new Buku();
         pemograman.setTitle("Bahasa pemograman");
         pemograman.setCreatedAt(LocalDateTime.now());
@@ -19,9 +19,11 @@ public class BukuController {
         service.insert(pemograman);
     }
 
-    public void update(){
+    public void update() {
         this.service = new BukuService();
 //        service.update(new Buku());
-        service.updateBuku();
+//        service.updateBuku();
+//        service.list();
+        service.listBuku();
     }
 }

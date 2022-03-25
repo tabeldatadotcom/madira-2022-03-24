@@ -2,6 +2,9 @@ package com.maryanto.dimas.bootcamp.service;
 
 import com.maryanto.dimas.bootcamp.entity.Buku;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BukuService {
 
     public void insert(Buku data) {
@@ -47,6 +50,41 @@ public class BukuService {
 //
 //            index++;
 //        } while (index < 100);
+    }
+
+    public void list() {
+//        String[] daftarBuah = new String[10];
+//        daftarBuah[0] = "Mangga";
+//        daftarBuah[11] = "Apple";
+        List<String> daftarBuah = new ArrayList();
+        daftarBuah.add("Manggo");
+        daftarBuah.add("Apple");
+        daftarBuah.add("Jeruk");
+
+//        for (int i = 0; i <= daftarBuah.size(); i++) {
+//            System.out.println("nama buah: "+ daftarBuah.get(i));
+//        }
+
+        for (String buah : daftarBuah) {
+            System.out.println("nama buah: " + buah);
+        }
+    }
+
+    public void listBuku() {
+        List<Buku> daftarBuku = new ArrayList<>();
+        Buku buku1 = new Buku();
+        buku1.setTitle("Pemograman");
+        buku1.setAuthor("Dimas Maryanto");
+        daftarBuku.add(buku1);
+
+        Buku buku2 = new Buku();
+        buku2.setTitle("DevOps Kubernetes");
+        buku2.setAuthor("Dimas Maryanto");
+        daftarBuku.add(buku2);
+
+        for (Buku buku : daftarBuku) {
+            System.out.println("nama buku: " + buku.getTitle() + ", author: " + buku.getAuthor());
+        }
     }
 
 }
