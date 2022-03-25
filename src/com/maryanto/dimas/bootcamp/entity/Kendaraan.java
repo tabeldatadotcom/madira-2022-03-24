@@ -2,7 +2,7 @@ package com.maryanto.dimas.bootcamp.entity;
 
 public class Kendaraan {
 
-    private Integer roda;
+    protected Integer roda;
     private String mesin;
     private Integer cc;
     private String merk;

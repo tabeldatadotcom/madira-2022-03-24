@@ -38,6 +38,6 @@ public class BelajarJava {
 //        call.findByMobil();
 //        call.findByMotor();
 //        call.findByKendaraanMobilAndMotor();
-        System.out.println(call.hitungKecepatan());
+        call.gantiChannel();
     }
 }

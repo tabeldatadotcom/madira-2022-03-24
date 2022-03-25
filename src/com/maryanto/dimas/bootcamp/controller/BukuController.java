@@ -5,6 +5,8 @@ import com.maryanto.dimas.bootcamp.entity.Kendaraan;
 import com.maryanto.dimas.bootcamp.entity.Mobil;
 import com.maryanto.dimas.bootcamp.entity.Motor;
 import com.maryanto.dimas.bootcamp.service.BukuService;
+import com.maryanto.dimas.bootcamp.service.DatabaseConnect;
+import com.maryanto.dimas.bootcamp.service.MysqlConfig;
 
 import java.time.LocalDateTime;
 
@@ -71,6 +73,11 @@ public class BukuController {
 
     public Integer hitungKecepatan() {
         Kendaraan kendaraan = new Mobil();
-        return kendaraan.hitungKecepatan(30,false);
+        return kendaraan.hitungKecepatan(30, false);
+    }
+
+    public void gantiChannel() {
+        DatabaseConnect db = new MysqlConfig();
+        db.connect();
     }
 }
