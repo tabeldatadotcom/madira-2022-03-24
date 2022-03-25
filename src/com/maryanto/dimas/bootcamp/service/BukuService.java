@@ -39,7 +39,7 @@ public class BukuService {
         int index = 0;
         while (index < 100) {
             System.out.println("saya index ke " + index);
-//            index++;
+            index++;
         }
 
 //        index = 0;
