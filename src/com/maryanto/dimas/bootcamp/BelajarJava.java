@@ -35,8 +35,9 @@ public class BelajarJava {
     public static void main(String[] args) {
         BukuController call = new BukuController();
 //        call.insert();
-        call.findByMobil();
-        call.findByMotor();
-        call.findByKendaraanMobilAndMotor();
+//        call.findByMobil();
+//        call.findByMotor();
+//        call.findByKendaraanMobilAndMotor();
+        System.out.println(call.hitungKecepatan());
     }
 }

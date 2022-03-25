@@ -7,6 +7,22 @@ public class Kendaraan {
     private Integer cc;
     private String merk;
 
+    public Integer hitungKecepatan() {
+        return 10;
+    }
+
+    public Integer hitungKecepatan(Integer keceptan) {
+        return keceptan;
+    }
+
+    public Integer hitungKecepatan(Integer keceptan, Boolean active) {
+        return keceptan;
+    }
+
+    public Integer hitungKecepatan(Boolean active, Integer keceptan) {
+        return keceptan;
+    }
+
     public Integer getRoda() {
         return roda;
     }

@@ -54,7 +54,7 @@ public class BukuController {
         yamahaR1.setStang("ada");
         yamahaR1.setRoda(4);
         yamahaR1.setMerk("Yamaha");
-        System.out.println("merk: " + yamahaR1.getMerk() + ", jumlah roda: " + yamahaR1.getRoda()+", jenis: motor");
+        System.out.println("merk: " + yamahaR1.getMerk() + ", jumlah roda: " + yamahaR1.getRoda() + ", jenis: motor");
     }
 
     public void findByKendaraanMobilAndMotor() {
@@ -67,5 +67,10 @@ public class BukuController {
         hondaCivic.setMerk("Honda");
         System.out.println("merk: " + hondaCivic.getMerk() + ", jumlah roda: " + hondaCivic.getRoda());
 
+    }
+
+    public Integer hitungKecepatan() {
+        Kendaraan kendaraan = new Mobil();
+        return kendaraan.hitungKecepatan(30,false);
     }
 }

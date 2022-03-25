@@ -6,6 +6,11 @@ public class Mobil extends Kendaraan {
     private Integer jumlahPenumpang;
     private String stearing;
 
+    @Override
+    public Integer hitungKecepatan() {
+        return super.hitungKecepatan();
+    }
+
     public String getSpion() {
         return spion;
     }
