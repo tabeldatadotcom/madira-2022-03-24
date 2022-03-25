@@ -34,6 +34,7 @@ public class BelajarJava {
 
     public static void main(String[] args) {
         BukuController call = new BukuController();
-        call.insert();
+//        call.insert();
+        call.update();
     }
 }

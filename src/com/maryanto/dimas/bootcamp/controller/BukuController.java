@@ -18,4 +18,10 @@ public class BukuController {
         this.service = new BukuService();
         service.insert(pemograman);
     }
+
+    public void update(){
+        this.service = new BukuService();
+//        service.update(new Buku());
+        service.updateBuku();
+    }
 }
