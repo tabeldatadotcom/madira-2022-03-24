@@ -11,12 +11,12 @@ public class Buku {
     private String publisher;
     private LocalDateTime createdAt;
 
-    public void setIsbn(String isbn){
-        this.isbn = isbn;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public String getIsbn(){
-        return this.isbn;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
     public String getTitle() {
